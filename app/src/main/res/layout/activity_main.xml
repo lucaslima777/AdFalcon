@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/relative"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:id="@+id/adchoices_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" />
+
+    <ImageView
+        android:id="@+id/template_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/template_title"
+        style="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Native Ad Title"
+        android:layout_toRightOf="@id/template_icon" />
+
+    <TextView
+        android:id="@+id/template_description"
+        style="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/template_title"
+        android:layout_marginTop="10dp"
+        android:text="Native Ad Description"
+        android:layout_toRightOf="@id/template_icon" />
+
+    <RelativeLayout
+        android:id="@+id/template_main_asset"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/template_description"
+        android:layout_marginTop="10dp" />
+
+    <RatingBar
+        android:id="@+id/template_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/template_main_asset"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/template_sponsored"
+        style="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/template_rating"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/template_action_button"
+        style="?android:attr/textAppearanceMedium"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/template_sponsored"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/app_name" />
+
+</RelativeLayout>
